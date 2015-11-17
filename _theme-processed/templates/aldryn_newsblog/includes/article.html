@@ -1,0 +1,31 @@
+{% load i18n apphooks_config_tags cms_tags sekizai_tags staticfiles thumbnail %}
+{% load url from future %}
+
+<div class="post-preview">
+    <a href="{{ article.get_absolute_url }}">
+        <h2 class="post-title">
+           {{ article.title|striptags }}
+        </h2>
+        <h3 class="post-subtitle">
+           {{ article.lead_in|striptags }}
+        </h3>
+    </a>
+    <p class="post-meta">
+        {% if author and author.slug %}
+            {% trans "Posted by" %}
+            <a href="{% namespace_url "article-list-by-author" article.author.slug namespace=namespace default='' %}">{{ article.author.username }}</a>
+            {% trans "on" %}
+        {% else %}
+            {% trans "Posted on" %}
+        {% endif %}
+        {# September 24, 2014 #}
+        {{ article.publishing_date|date:"F d, Y" }}
+    </p>
+
+    {% if detail_view %}
+        {% render_placeholder article.content language placeholder_language %}
+    {% endif %}
+</div>
+<hr>
+
+{% addtoblock "css" %}<link rel="stylesheet" href="{% static 'css/aldryn-newsblog/article.css' %}">{% endaddtoblock %}

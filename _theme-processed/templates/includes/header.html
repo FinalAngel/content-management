@@ -1,0 +1,28 @@
+{% load i18n cms_tags menu_tags %}
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">{% trans "Toggle navigation" %}</span>
+                {% for item in 123|make_list %}
+                    <span class="icon-bar"></span>
+                {% endfor %}
+            </button>
+            <a class="navbar-brand" href="/">
+                {% static_placeholder "logo" %}
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                {% show_menu 0 100 100 100 "includes/menu.html" %}
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>

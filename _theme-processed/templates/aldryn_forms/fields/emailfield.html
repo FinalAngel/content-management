@@ -1,0 +1,18 @@
+{% load aldryn_forms_tags i18n %}
+
+{% if field %}
+    <div class="row control-group">
+        <div class="form-group col-xs-12 floating-label-form-group controls">
+            <label for="{{ field.auto_id }}">
+                {{ field.label }}
+                {% if field.field.required %}
+                    <abbr title="{% trans "Required field" %}">*</abbr>
+                {% endif %}
+            </label>
+            {% render_form_widget field class="form-control" %}
+            {% for error in field.errors %}
+                <p class=" text-danger">{{ error }}</p>
+            {% endfor %}
+        </div>
+    </div>
+{% endif %}
