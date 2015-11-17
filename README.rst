@@ -1,15 +1,36 @@
-Content Management Systems
-##########################
+##################
+Content Management
+##################
 
-Jekyll installation
-===================
+django CMS
+==========
 
-- ``cd _jekyll && bundle install`` if you have bundler installed (``gem install bundler``)
-- or ``gem install github-pages``
+Ensure python is installed and configured. Test with ``python --version``.
 
-There might be issues on OSX El Capitain, use ``sudo gem install -n /usr/local/bin`` instead.
+#. ``cd django-cms``
+#. ``pip install virtualenv``
+#. ``virtualenv env``
+#. ``source env/bin/activate``
+#. ``pip install -r requirements.txt``
+#. ``python manage.py migrate``
+#. ``python manage.py createsuperuser``
+#. ``python manage.py runserver``
 
-You can run the server using ``bundle exec jekyll serve``.
+Open your browser at ``http://localhost:8000``.
+
+Jekyll
+======
+
+Ensure ruby is installed and properly configured. There are some known issues on `OSX El Capitan 
+<http://stackoverflow.com/questions/31972968/cant-install-gems-on-macos-x-el-capitan>`_.
+
+#. ``gem install bundler`` (might not be required)
+#. ``bundle install``
+#. ``jekyll new gh-pages``
+#. ``cd gh-pages``
+#. ``bundle exec jekyll serve``
+
+Open your browser at ``http://localhost:4000``.
 
 Documentations
 ==============
