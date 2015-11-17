@@ -1,4 +1,5 @@
-<!doctype html>{% load i18n staticfiles cms_tags sekizai_tags %}
+{% load i18n staticfiles cms_tags sekizai_tags %}
+<!doctype html>
 <html lang="{{ LANGUAGE_CODE }}">
 <head>
     <meta charset="utf-8">
@@ -8,7 +9,6 @@
     <meta name="description" content="{% page_attribute meta_description %}">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% render_block "css" %}
-    {{ ALDRYN_SNAKE.render_head }}
 </head>
 <body>
 {% cms_toolbar %}
