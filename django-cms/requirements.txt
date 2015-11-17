@@ -4,5 +4,6 @@ https://github.com/divio/django-cms/archive/develop.zip
 https://github.com/divio/djangocms-text-ckeditor/archive/master.zip
 https://github.com/stefanfoulis/django-filer/archive/develop.zip
 https://github.com/aldryn/aldryn-bootstrap3/archive/master.zip
-aldryn-newsblog>=1.0.0
 aldryn-style>=1.0.0
+aldryn-forms>=1.0.0
+aldryn-newsblog>=1.0.0

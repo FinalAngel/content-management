@@ -67,8 +67,9 @@ INSTALLED_APPS = (
     'taggit',
     # > addons
     'aldryn_bootstrap3',
-    'aldryn_newsblog',
     'aldryn_style',
+    'aldryn_forms',
+    'aldryn_newsblog',
 )
 
 MIDDLEWARE_CLASSES = (
