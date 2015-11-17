@@ -32,7 +32,9 @@ Ensure ruby is installed and properly configured. There are some known issues on
 
 Open your browser at ``http://localhost:4000``.
 
-Documentations
-==============
+Resources
+=========
 
 - `Jekyll <https://help.github.com/articles/using-jekyll-with-pages/>`_
+- `django CMS <docs.django-cms.org>`_
+- `Clean Blog Theme <http://startbootstrap.com/template-overviews/clean-blog/>`_
