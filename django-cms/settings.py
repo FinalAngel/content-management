@@ -272,6 +272,8 @@ ALDRYN_STYLE_CLASS_NAMES = (
 # DOCS: https://github.com/divio/djangocms-text-ckeditor
 
 CKEDITOR_SETTINGS = {
-    'stylesSet': 'default:/static/js/addons/ckeditor.wysiwyg.js',
-    'contentsCss': ['/static/css/base.css'],
+    'contentsCss': [
+        '/static/css/bootstrap.min.css',
+        '/static/css/clean-blog.min.css'
+    ],
 }
