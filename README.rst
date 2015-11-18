@@ -7,4 +7,4 @@ Installation
 
 #. ``gem install bundler`` (might not be required)
 #. ``bundle install``
-#. ``bundle exec jekyll serve``
+#. ``jekyll serve --watch --baseurl ""``
