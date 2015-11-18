@@ -28,7 +28,7 @@ Ensure ruby is installed and properly configured. There are some known issues on
 #. ``bundle install``
 #. ``jekyll new gh-pages``
 #. ``cd gh-pages``
-#. ``bundle exec jekyll serve``
+#. ``jekyll serve --watch --baseurl ""``
 
 Open your browser at ``http://localhost:4000``.
 
