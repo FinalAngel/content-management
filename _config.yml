@@ -11,6 +11,7 @@ url: "" # the base hostname & protocol for your site
 twitter_username: finalangel
 github_username:  finalangel
 exclude: ["README.rst"]
+author: Angelo Dini
 
 # Build settings
 markdown: kramdown
