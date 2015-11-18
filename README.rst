@@ -37,4 +37,6 @@ Resources
 
 - `Jekyll <https://help.github.com/articles/using-jekyll-with-pages/>`_
 - `django CMS <docs.django-cms.org>`_
+- `Django template langugae <https://docs.djangoproject.com/en/1.8/ref/templates/builtins/>`_
+- `Liquid template language <https://github.com/Shopify/liquid/wiki>`_
 - `Clean Blog Theme <http://startbootstrap.com/template-overviews/clean-blog/>`_
