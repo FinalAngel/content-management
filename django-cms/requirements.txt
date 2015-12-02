@@ -1,8 +1,8 @@
 Django>=1.8.6
-https://github.com/divio/djangocms-admin-style/archive/develop.zip
+https://github.com/divio/djangocms-admin-style/archive/master.zip
 https://github.com/divio/django-cms/archive/develop.zip
 https://github.com/divio/djangocms-text-ckeditor/archive/master.zip
-https://github.com/stefanfoulis/django-filer/archive/develop.zip
+https://github.com/divio/django-filer/archive/develop.zip
 https://github.com/aldryn/aldryn-bootstrap3/archive/master.zip
 aldryn-style>=1.0.0
 aldryn-forms>=1.0.0
